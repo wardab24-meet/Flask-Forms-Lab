@@ -1,4 +1,4 @@
-z<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +10,15 @@ z<!DOCTYPE html>
 <h2>Facebook Search Bar</h2>
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<ul id="">
+
+{% for Friend in  friends%}
+
+<li><a href="#">{{friend}}</a></li>
+
+{% endfor%}
+</ul>
+
 
 <ul id="myUL">
   <li><a href="#">Adele</a></li>
